@@ -7,48 +7,30 @@ class Solution{
 public:
     string isInRange(int N){
         // code here 
-        if(N==1){
+        for(int i;i<=N;i++)
+        switch(N){
+            case 1:
             return "one";
-            
-        }
-         else if(N==2){
-             return "two";
-            
-        }
-         else if(N==3){
-             return "three";
-            
-        }
-        else  if(N==4){
-             return "four";
-            
-        }
-        else  if(N==5){
-             return "five";
-            
-        }
-        else  if(N==6){
-             return "six";
-            
-        }
-        else  if(N==7){
-             return "seven";
-            
-        }
-        else  if(N==8){
-             return "eight";
-            
-        }
-        else  if(N==9){
-             return "nine";
-            
-        }
-        else  if(N==10){
-             return "ten";
-            
-        }
-        else{
-            return "not in range";
+            case 2:
+            return "two";
+            case 3:
+            return "three";
+            case 4:
+            return "four";
+            case 5:
+            return "five";
+            case 6:
+            return "six";
+            case 7:
+            return "seven";
+            case 8:
+            return "eight";
+             case 9:
+            return "nine"; 
+            case 10:
+            return "ten";
+            default:
+            return"not in range";
         }
     }
 };
